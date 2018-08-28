@@ -238,6 +238,7 @@ $(document).ready(function () {
   // module 04 - 橘子动态轮播图
   var initBanner = $(function () {
     // 轮播图部分
+    return;
     var mySwiper = new Swiper('.swiper-container',{
       autoplay : 10000,
       initialSlide : 0,
@@ -338,4 +339,26 @@ $(document).ready(function () {
   }());
   // End method /loadPage()/
 
+  var moduleOneBanner = $(function (){
+    var tabContentItem = $(".module-07 .main .swiper-container .swiper-wrapper .swiper-slide");
+  
+    var moduleOneSwiper = new Swiper('.module-07 .main #tabs-container',{
+      initialSlide: 0,
+      onSlideChangeStart: function(swiper){
+        $(".module-07 .tabs .active").removeClass('active');
+        $(".module-07 .tabs p").eq(swiper.activeIndex).addClass('active');
+      }
+    });
+    $(".module-07 .tabs p").on('touchstart mousedown',function(e){
+      e.preventDefault();
+      $(".module-07 .tabs .active").removeClass('active');
+      $(this).addClass('active');
+      moduleOneSwiper.slideTo( $(this).index() );
+    });
+  
+    $(".module-07 .tabs p").click(function(e){
+      e.preventDefault();
+    });
+  }());
+  
 });
