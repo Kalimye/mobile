@@ -480,17 +480,11 @@ body {
  * module-07 四项服务
  */
 
-.module-07 .main {
-	/*height: 10.95rem;*/
-}
 
-.module-07 .main div {
+.module-07 .main div.tabs {
 	width: 100%;
-	height: 2.7rem;
-}
-
-.module-07 .main div div {
-	width: 4.18rem;
+	height: 1.8rem;
+	margin-bottom: .5rem;
 }
 
 .module-07 .main div .wenl {
@@ -523,24 +517,79 @@ body {
 	padding-top: .05rem;
 }
 
-.module-07 .main .m1 {
-	background: url(../images/index/module-07-bg1.png) center center no-repeat;
-	background-size: contain;
+.module-07 .main div.tabs{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.module-07 .main .tabs p{
+	/* font-weight: bold; */
+	width: 100%;
+	height: .64rem;
+	font-weight: bold;
+	line-height: .64rem;
+	text-align: center;
+	color: #313131;
+	background: #ffe8a8;
 }
 
-.module-07 .main .m2 {
-	background: url(../images/index/module-07-bg2.png) center center no-repeat;
-	background-size: contain;
+.module-07 .main .tabs p.active{
+	height: .76rem;
+	line-height: .76rem;
+	color: #fff;
+	background: #fb924c;
+	font-weight: bold;
 }
 
-.module-07 .main .m3 {
-	background: url(../images/index/module-07-bg3.png) center center no-repeat;
-	background-size: contain;
+.module-07 .main .swiper-container .swiper-slide{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.module-07 .main .swiper-container .swiper-slide .img{
+	width: 29%;
+	height: 2.57rem;
+	margin-right:5%;
+	padding-left: 4%;
+}
+.module-07 .main .swiper-container .swiper-slide .img img{
+	width: 100%;
+	height: 100%;
+}
+.module-07 .main .swiper-container .swiper-slide .txt{
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 62%;
+	height: 2.57rem;
+	padding-right: 4%;
+}
+.module-07 .main .swiper-container .swiper-slide .txt p{
+	color:#616161;
+	font-size: .27rem;
+	letter-spacing: .02rem;
+}
+.module-07 .main .swiper-container .swiper-slide .txt span{
+	color: #eb4343;
+	font-size: .3rem;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
 }
 
-.module-07 .main .m4 {
-	background: url(../images/index/module-07-bg4.png) center center no-repeat;
-	background-size: contain;
+.module-07 .main .swiper-container .swiper-slide .txt span i{
+	width: .35rem;
+    height: .35rem;
+	font-size: 0;	
+	margin-right: .2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: .04rem solid #eb3e3e;
 }
-
-/*//////////////////*/
+.module-07 .main .swiper-container .swiper-slide .txt span i img{
+	width: .25rem;
+	height: .23rem;
+	line-height: .23rem;
+}
