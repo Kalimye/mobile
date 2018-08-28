@@ -103,17 +103,22 @@ body{
 
 
 /** Start module 02 area */
-
+.module-02 .main {
+	margin-top: .35rem;
+}
 .module-02 .main .row {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	padding: 0 .15rem;
 }
-
+.module-02 .main .row:nth-child(1){
+	
+	margin-bottom: .4rem
+}
 .module-02 .main .row img {
 	padding: .07rem;
-	width: 3.47rem;
-	height: 2.13rem;
+    width: 3.02rem;
+    height: 1rem;
 }
 
 
